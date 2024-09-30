@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class Zoo {
     public String name;
     public String city;
@@ -18,7 +16,6 @@ public class Zoo {
     public Zoo(String name, String city, int nbCage) {
         this.name = name;
         this.city = city;
-
 
         animals = new Animal[NB_CAGES];
         System.out.println("--->" + this.animals.length);
@@ -64,7 +61,7 @@ public class Zoo {
     }
 
     public int searchAnimal(Animal animal) {
-        //int pos=-1;
+        // int pos=-1;
         for (int i = 0; i < nbAnimals; i++) {
             if (animals[i].name.equals(animal.name)) {
                 return i;
@@ -98,21 +95,16 @@ public class Zoo {
         }
         return null;
     }
-public boolean  isZooFull (Zoo zoo) {
-    if(zoo.nbAnimals >= NB_CAGES) {
 
-        System.out.println("le zoo est plein");
-        return true;
+    public boolean isZooFull(Zoo zoo) {
+        if (zoo.nbAnimals >= NB_CAGES) {
+
+            System.out.println("le zoo est plein");
+            return true;
+        } else {
+            System.out.println("le zoo n' est pas plein");
+            return false;
+        }
     }
-   else
-    { System.out.println("le zoo n' est pas plein");
-        return false;
-    }
+
 }
-
-
-    }
-
-
-
-

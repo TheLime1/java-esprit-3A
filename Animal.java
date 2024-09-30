@@ -17,8 +17,9 @@ public class Animal {
         this.age = age;
         this.isMammal = isMammal;
     }
-public String toString() {
-        return "Name: "+name+ ",age:"+age+" , isMammal:"+isMammal;
-}
+
+    public String toString() {
+        return "Name: " + name + ",age:" + age + " , isMammal:" + isMammal;
+    }
 
 }
